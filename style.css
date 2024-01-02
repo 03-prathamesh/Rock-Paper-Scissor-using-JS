@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.heading{
+    border: 2px solid black;
+    /* text-align: center; */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #081b31;
+    color: white;
+}
+
+.images{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 50px;
+}
+
+img{
+    /* height: 10px; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.score-board{
+
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 4rem;
+    margin-top: 100px;
+    /* then the div will set its width according to the content on it , very imp and we will set vertically alighned with each other or horizontally one after another with the help of flex-direction property */
+    /* flex-direction: column; */
+
+}
+
+#user-score,#Comp-Score{
+    font-size: 3rem;
+}
+
+.imag{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.big-cont{
+    /* */
+    /* border: 2px solid black; */
+    /* border-radius: 50%; */
+    
+    /* align-items: center; */
+    /*  */
+    /* height: 165px;
+    width: 165px;  if you set this and add moro content then it will go outside to its height and width then its height and width will ot depend on the content*/
+    
+    /* if you dont give height and with to this div then it will set accordingly to the content itself as width and height after applyginh display flex */
+
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 50px;
+}
+
+.imag:hover{
+    /* background-color: black;  */
+    /* border: 2px solid black; */
+    cursor: pointer;
+    /* opacity: 0.8; */
+    background-color: black;
+   
+}
+
+.msg-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+     margin-top: 50px;
+     /* height: 50px;  height set nasel keli tr ha div content chya accordingly height adjust karel automatically. ani height ekda set keli anni tyatla content height peksha jast gela tr height nahi vadhnar content chya accc, tevdhivh rahnar*/
+
+    /* border: 2px solid black; */
+} 
+
+.cp{
+    /* border: 2px solid black; */
+    padding: 10px;  /*jast padding vadhvli tr te */
+    border-radius: 15px;
+    background-color:#081b31;
+    color: white;
+    font-size: 1.2rem;
+    display: inline;
+    /* text-align: centermargi; */
+}
+
+.display{
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 16px;
+    /* display: inline; */
+    display: inline-block;
+    /* display: none; yala display none deun kahi upyog nahi , jo dusari class dili aahe tyalach apply karayach */ 
+}
+
+#one,#two{
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: bold;
+    padding: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+
