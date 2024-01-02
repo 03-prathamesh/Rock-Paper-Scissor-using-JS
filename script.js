@@ -7,6 +7,12 @@ const msg=document.querySelector(".cp");
 let disp=document.querySelector(".display");
 let p1=document.querySelector("#one");
 let p2=document.querySelector("#two");
+let comp=document.querySelector("#Comp-Score");
+let user=document.querySelector("#user-score");
+
+let count1=0;
+let count2=0;
+
 
 const generateCompChoice=()=>{
        const options=["rock","paper","scissor"];
@@ -38,6 +44,8 @@ const showWinner=(w,u,c)=>{
     p1.innerText=`your choice was: ${u}`;
     p2.innerText=`Computers Choice Was: ${c}`;
     disp.classList.remove("hide");
+    count1++;
+    user.innerHTML=count1;
 
    }
    else{
@@ -47,8 +55,11 @@ const showWinner=(w,u,c)=>{
     p1.innerText=`Your Choice was: ${u}`;
     p2.innerText=`Computers Choice Was: ${c}`;
     disp.classList.remove("hide");
+    count2++;
+    comp.innerHTML=count2;
    }
 }
+
 choices.forEach((choice)=>{
       choice.addEventListener("click",()=>{
         //  alert("Choice was clicked!");
